@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <div class="logo">
+                <img class="w-75" src="images/logo.png" alt="logo">
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a id="nowPlaying" class="nav-link active" aria-current="page" href="#">Now Playing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="popular" class="nav-link active" aria-current="page" href="#">Popular</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="topRated" class="nav-link active" aria-current="page" href="#">Top Rated</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="trending" class="nav-link active" aria-current="page" href="#">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="upcoming" class="nav-link active" aria-current="page" href="#">Upcoming</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="contactUs" class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container py-3 d-flex justify-content-evenly ">
+        <div class="form-outline border-bottom border-2 border-dark">
+            <input type="search" id="gmbw" class="form-control" placeholder="get movies by word..."
+                aria-label="Search" />
+        </div>
+        <div class="form-outline border-bottom border-2 border-dark">
+            <input type="search" id="searchapi" class="form-control" placeholder="search..." aria-label="Search" />
+        </div>
+    </div>
+
+    <!-- width < 100%, margin:auto -->
+    <div class="container overflow-auto">
+        <!-- display flex -->
+        <div class="row gy-3 justify-content-center">
+            <div class="col-sm-12 col-md-6 col-lg-4 d-flex">
+                <div class="item w-75 justify-content-center align-items-center">
+                    <img class="rounded w-100" src="images/panama.jpg" alt="panama">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="w-100 d-flex justify-content-center">
+        <div class="container py-3 d-flex justify-content-evenly row gy-2">
+            <div class="form-outline  border-2 border-dark col-6">
+                <input type="search" id="name" class="form-control" placeholder="Enter Your Name"
+                    aria-label="Search" />
+            </div>
+            <div class="form-outline col-6">
+                <input type="search" id="phone" class="form-control" placeholder="Enter phone" aria-label="Search" />
+            </div>
+            <div class="form-outline col-6">
+                <input type="search" id="password" class="form-control" placeholder="Enter Password" aria-label="Search" />
+            </div>
+            <div class="form-outline col-6">
+                <input type="search" id="email" class="form-control" placeholder="Enter Email" aria-label="Search" />
+            </div>
+            <div class="form-outline col-6">
+                <input type="search" id="age" class="form-control" placeholder="Enter Age" aria-label="Search" />
+            </div>
+            <div class="form-outline col-6">
+                <input type="search" id="repassword" class="form-control" placeholder="Enter RePassword" aria-label="Search" />
+            </div>
+            <button id="submit" type="button" class="btn btn-outline-primary align-self-end col">Submit</button>
+        </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
